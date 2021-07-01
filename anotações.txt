@@ -1,0 +1,5 @@
+-- Para rodar as migrations
+yarn typeorm migration:run
+
+-- Para desfazer as migrations
+yarn typeorm migration:revert
