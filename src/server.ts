@@ -11,8 +11,6 @@ app.use(router);
 
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {
-    console.log("teste");
-    console.log(err);
     if (err instanceof Error) {
       return response.status(400).json({
         error: err.message,
